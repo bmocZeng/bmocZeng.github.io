@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background: #f5f5f5;
+        }
+
+        /* ========== 顶部导航三个框框 ========== */
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-box {
+            width: 180px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .nav-outdoor {
+            background: linear-gradient(135deg, #43e97b, #38f9d7);
+        }
+
+        .nav-sports {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+        }
+
+        .nav-medical {
+            background: linear-gradient(135deg, #fa709a, #fee140);
+        }
+
+        /* ========== 主页内容 ========== */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #888;
+        }
+
+        /* ========== 三个产品卡片 ========== */
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 300px;
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+
+        .card-img {
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+        }
+
+        .card-img.outdoor { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        .card-img.sports  { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .card-img.medical { background: linear-gradient(135deg, #fa709a, #fee140); }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-body h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-body p {
+            font-size: 14px;
+            color: #999;
+            line-height: 1.6;
+        }
+
+        .card-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 20px;
+            border-radius: 20px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .btn-green  { background: #43e97b; }
+        .btn-blue   { background: #4facfe; }
+        .btn-pink   { background: #fa709a; }
+
+        /* ========== 底部 ========== */
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #bbb;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== 顶部三个框框 ========== -->
+    <div class="nav-bar">
+        <a href="outdoor.html" class="nav-box nav-outdoor">🏕️ 户外</a>
+        <a href="sports.html"  class="nav-box nav-sports">🏃 运动防护</a>
+        <a href="medical.html" class="nav-box nav-medical">🏥 医疗支具</a>
+    </div>
+
+    <!-- ========== 主页欢迎区 ========== -->
+    <div class="hero">
+        <h1>欢迎来到我们的商城</h1>
+        <p>专注户外装备 · 运动防护 · 医疗支具</p>
+    </div>
+
+    <!-- ========== 三个产品卡片 ========== -->
+    <div class="cards">
+        <a href="outdoor.html" class="card">
+            <div class="card-img outdoor">🏕️</div>
+            <div class="card-body">
+                <h3>户外产品</h3>
+                <p>登山、露营、徒步，为你的每一次探险保驾护航</p>
+                <span class="card-btn btn-green">查看详情 →</span>
+            </div>
+        </a>
+
+        <a href="sports.html" class="card">
+            <div class="card-img sports">🏃</div>
+            <div class="card-body">
+                <h3>运动防护</h3>
+                <p>护膝、护腕、护踝，专业运动防护装备</p>
+                <span class="card-btn btn-blue">查看详情 →</span>
+            </div>
+        </a>
+
+        <a href="medical.html" class="card">
+            <div class="card-img medical">🏥</div>
+            <div class="card-body">
+                <h3>医疗支具</h3>
+                <p>康复支具、矫正器、固定带，助力健康恢复</p>
+                <span class="card-btn btn-pink">查看详情 →</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="footer">© 2026 我的商城 版权所有</div>
+
+</body>
+</html>
 

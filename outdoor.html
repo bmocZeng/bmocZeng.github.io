@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>户外产品</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", sans-serif; }
+
+        /* 顶部导航 */
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .nav-box {
+            width: 180px; height: 60px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 12px; font-size: 18px; font-weight: bold;
+            color: #fff; text-decoration: none; transition: all 0.3s;
+        }
+        .nav-box:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+        .nav-outdoor { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        .nav-sports  { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .nav-medical { background: linear-gradient(135deg, #fa709a, #fee140); }
+
+        /* 当前页面高亮 */
+        .active {
+            outline: 3px solid #333;
+            outline-offset: 3px;
+        }
+
+        /* 页面内容 */
+        .page-header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #43e97b, #38f9d7);
+            color: #fff;
+        }
+        .page-header h1 { font-size: 48px; margin-bottom: 15px; }
+        .page-header p  { font-size: 20px; opacity: 0.9; }
+
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .content h2 { font-size: 28px; color: #333; margin-bottom: 20px; }
+        .content p  { font-size: 16px; color: #666; line-height: 1.8; }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #43e97b, #38f9d7);
+            color: #fff;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .back-btn:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(67,233,123,0.4); }
+
+        .footer { text-align: center; padding: 30px; color: #bbb; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <a href="outdoor.html" class="nav-box nav-outdoor active">🏕️ 户外</a>
+        <a href="sports.html"  class="nav-box nav-sports">🏃 运动防护</a>
+        <a href="medical.html" class="nav-box nav-medical">🏥 医疗支具</a>
+    </div>
+
+    <div class="page-header">
+        <h1>🏕️ 户外产品</h1>
+        <p>探索自然，装备先行</p>
+    </div>
+
+    <div class="content">
+        <h2>欢迎购买户外产品</h2>
+        <p>
+            我们提供专业的户外装备，包括登山背包、帐篷、睡袋、
+            冲锋衣、登山杖、户外照明等。<br><br>
+            无论是周末郊游还是长途徒步，我们都能为您提供最可靠的装备支持。
+        </p>
+        <a href="index.html" class="back-btn">← 返回首页</a>
+    </div>
+
+    <div class="footer">© 2026 我的商城 版权所有</div>
+
+</body>
+</html>

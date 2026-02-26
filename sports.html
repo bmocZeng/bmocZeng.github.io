@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运动防护</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", sans-serif; }
+
+        .nav-bar {
+            display: flex; justify-content: center; gap: 20px;
+            padding: 20px; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .nav-box {
+            width: 180px; height: 60px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 12px; font-size: 18px; font-weight: bold;
+            color: #fff; text-decoration: none; transition: all 0.3s;
+        }
+        .nav-box:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+        .nav-outdoor { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        .nav-sports  { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .nav-medical { background: linear-gradient(135deg, #fa709a, #fee140); }
+        .active { outline: 3px solid #333; outline-offset: 3px; }
+
+        .page-header {
+            text-align: center; padding: 80px 20px;
+            background: linear-gradient(135deg, #4facfe, #00f2fe); color: #fff;
+        }
+        .page-header h1 { font-size: 48px; margin-bottom: 15px; }
+        .page-header p  { font-size: 20px; opacity: 0.9; }
+
+        .content {
+            max-width: 800px; margin: 40px auto; padding: 40px;
+            background: #fff; border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;
+        }
+        .content h2 { font-size: 28px; color: #333; marginottom: 20px; }
+        .content p  { font-size: 16px; color: #666; line-height: 1.8; }
+
+        .back-btn {
+            display: inline-block; margin-top: 30px; padding: 12px 30px;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: #fff; border-radius: 25px; text-decoration: none;
+            font-size: 16px; transition: all 0.3s;
+        }
+        .back-btn:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(79,172,254,0.4); }
+
+        .footer { text-align: center; padding: 30px; color: #bbb; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <a href="outdoor.html" class="nav-box nav-outdoor">🏕️ 户外</a>
+        <a href="sports.html"  class="nav-box nav-sports active">🏃 运动防护</a>
+        <a href="medical.html" class="nav-box nav-medical">🏥 医疗支具</a>
+    </div>
+
+    <div class="page-header">
+        <h1>🏃 运动防护</h1>
+        <p>科学防护，尽情运动</p>
+    </div>
+
+    <div class="content">
+        <h2>欢迎购买运动防护产品</h2>
+        <p>
+            我们提供全系列运动防护装备，包括专业护膝、护腕、护踝、
+            护肘、运动绷带、防护头盔等。<br><br>
+            适合跑步、篮球、足球、健身等各类运动场景，
+            让您在挥洒汗水的同时远离运动损伤。
+        </p>
+        <a href="index.html" class="back-btn">← 返回首页</a>
+    </div>
+
+    <div class="footer">© 2026 我的商城 版权所有</div>
+
+</body>
+</html>
